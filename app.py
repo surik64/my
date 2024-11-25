@@ -18,6 +18,7 @@ def hello_world():
     #The function that returns the response "Hello, World!".
     return 'Hello, World!'
 
+
 # main driver function
 if __name__ == '__main__':
 
@@ -25,6 +26,6 @@ if __name__ == '__main__':
     # on the local development server.
     # This starts the app in debug mode, which helps in development by auto-reloading on code changes.
     # Run the Flask application
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
 # python app.py -> run this commomnd in terminal to run application
